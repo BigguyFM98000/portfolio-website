@@ -1,0 +1,536 @@
+/* Navigation bar styling */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em;
+}
+
+.logo {
+  margin: 1em;
+}
+
+.logo img {
+  margin-right: 0.3em;
+}
+
+.logo span {
+  height: 32px;
+  width: auto;
+  font-size: 2em;
+  color: #fff;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 1em 1.5em;
+  transition: background-color 0.5s ease-in;
+  color: white;
+}
+
+.nav-links li a:hover {
+  background-color: aquamarine;
+  color: blue;
+}
+
+.navbar {
+  background-color: blueviolet;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 6.5em;
+  right: 0;
+  padding: 1.5em 2em;
+  background-color: blueviolet;
+  display: none;
+}
+
+.mobile-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.mobile-links a {
+  text-decoration: none;
+  padding: 0 1em;
+  line-height: 1.5;
+  color: #fff;
+  width: 100%;
+  transition: background-color 0.5s ease-in;
+}
+
+.mobile-links a:hover {
+  background-color: aquamarine;
+  color: blue;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Home page styling */
+.homepage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1em;
+  padding: 1em 1.5em;
+  background-image: linear-gradient(to bottom, #3d5a80, #293241);
+}
+
+.home-image {
+  height: auto;
+  width: auto;
+}
+
+.home-image img {
+  height: 70vh;
+  width: auto;
+  border-radius: 0.5em;
+}
+
+.home-intro h1 {
+  margin-bottom: 1em;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.home-intro h1 span {
+  color: yellow;
+}
+
+.home-intro p {
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.home-intro p span {
+  color: yellow;
+}
+
+.home-intro a {
+  width: 50%;
+  padding: 1em 1.5em;
+  background-color: yellow;
+  margin-top: 2.5em;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 0.5em;
+}
+
+/* About Me Page Styling */
+.about-me {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #3d5a80, #293241);
+}
+
+.main-heading {
+  padding-top: 1em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+}
+
+.main-heading span {
+  color: yellow;
+}
+
+.about-me p {
+  padding: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-bottom: 1.2em;
+  text-align: center;
+}
+
+.skills-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.first-four,
+.last-four {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.first-four div,
+.last-four div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.first-four div span,
+.last-four div span {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Projects Page Styling */
+.projects {
+  height: 90vh;
+  width: 100%;
+  /* padding-top: 1.5em; */
+  background-image: linear-gradient(to bottom, #3d5a80, #293241);
+}
+
+.projects h2 {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.projects h2 span{
+  color: yellow;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+  padding: 2.5em;
+}
+
+.card {
+  border: 2px solid #fff;
+  border-radius: 0.5em;
+  background-color: #fff;
+}
+
+.card h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+.card span {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card p {
+  padding: 1em;
+  text-align: center;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 1em 1.5em;
+  width: 100%;
+}
+
+/* Contact Me Page Styling */
+.contact-me {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #3d5a80, #293241);
+}
+
+.contact-me h2 {
+  padding: 1em;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+}
+
+.contact-me h2 span{
+  color: yellow;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.contact-links {
+  width: 40%;
+  height: auto;
+}
+
+.contact-links h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 1em;
+  color: yellow;
+}
+
+.contact-links p {
+  font-size: 1.3em;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.contact-form {
+  width: 40%;
+}
+
+.contact-form h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  color: yellow;
+  margin-bottom: 1.5em;
+}
+
+.myform {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  border: 2px solid #fff;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  background-color: #fff;
+}
+
+.myform p {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.myform p input,
+.myform p textarea {
+  padding: 1em;
+  /* border-radius: 0.5em; */
+  border-bottom: 2px solid blue;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.myform p input:focus, .myform p textarea:focus{
+  outline: none;
+}
+
+.myform p label {
+  font-size: 1.5em;
+  color: #000;
+}
+
+.myform button {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: blue;
+  padding: 1em 1.5em;
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 0 3px #333;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1.5em;
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .logo span {
+    font-size: 1.5em;
+  }
+  .logo img {
+    height: 26px;
+  }
+  .mobile-menu {
+    display: block;
+    height: 28px;
+    width: 28px;
+    color: #fff;
+  }
+  .show {
+    display: block;
+  }
+  .homepage {
+    flex-direction: column;
+    padding: 2em 1em;
+  }
+
+  .home-intro {
+    text-align: center;
+  }
+
+  .home-image img {
+    height: 40vh;
+  }
+
+  .home-intro h1 {
+    font-size: 1.7em;
+  }
+
+  .home-intro p {
+    font-size: 1.2em;
+  }
+
+  .home-intro a {
+    font-size: 1.2em;
+    padding: 0.8em 1.2em;
+  }
+  .about-me {
+    height: auto;
+    width: 100%;
+    padding: 1.5em;
+  }
+  .about-me p {
+    font-size: 1.2em;
+  }
+  .first-four div span,
+.last-four div span{
+  font-size: 2em;
+}
+.last-four div img, .first-four div img{
+  height: auto;
+  width: 10em;
+}
+  .projects-container {
+    flex-direction: column;
+  }
+  .projects {
+    height: auto;
+    width: auto;
+    padding: 0 auto;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
+  .card span img {
+    width: 90%;
+  }
+  .contact-container{
+    flex-direction: column-reverse;
+  }
+  .contact-me {
+    height: auto;
+    padding-bottom: 3em;
+  }
+
+  .contact-me h2 {
+    font-size: 1.6em;
+  }
+
+  .contact-links,
+  .contact-form {
+    width: 95%;
+  }
+
+  .contact-links h3,
+  .contact-form h3 {
+    font-size: 1.3em;
+  }
+
+  .contact-links p {
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  .contact-icons{
+    flex-direction: column;
+  }
+
+  .myform {
+    gap: 1.5em;
+  }
+
+  .myform p label {
+    font-size: 1.1em;
+  }
+
+  .myform button {
+    width: 100%;
+  }
+
+  .contact-icons {
+    gap: 1.5em;
+  }
+
+  .contact-icons img {
+    width: 60px;
+    height: 60px;
+  }
+}
